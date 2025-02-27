@@ -57,12 +57,16 @@ function Home() {
     return (
         <div className="relative z-0 mb-5">
             <div className='w-full relative'>
-                <div className='w-full aspect-video bg-rose-500 shadow-2xl shadow-rose-500/50'>
-                    <video autoPlay loop muted playsInline className="w-full h-full object-cover">
-                        <source src='../public/websitevideo.mp4' type='video/mp4' />
-                        Video Could Not Load
-                    </video>
-                </div>
+               <div className='w-full aspect-video bg-rose-500 shadow-2xl shadow-rose-500/50'>
+    <iframe 
+        className="w-full h-full object-cover pointer-events-none"
+        src="https://www.youtube.com/embed/fvUy9AIVJQs?autoplay=1&loop=1&playlist=fvUy9AIVJQs&mute=1&controls=0&disablekb=1&modestbranding=1&rel=0"
+        title="YouTube video player"
+        frameBorder="0"
+        allow="autoplay; encrypted-media"
+        allowFullScreen
+    ></iframe>
+</div>
 
                 <div className='absolute top-0 left-0 w-full h-full flex justify-center items-center z-10'>
                     <h1 className='font-[Orbitron] text-2xl sm:text-4xl md:text-7xl lg:text-9xl font-bold text-center text-white relative z-0 scale-105 transition-all duration-600 hover:scale-100'>

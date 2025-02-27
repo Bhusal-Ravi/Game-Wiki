@@ -57,16 +57,16 @@ function Home() {
     return (
         <div className="relative z-0 mb-5">
             <div className='w-full relative'>
-               <div className='w-full aspect-video bg-rose-500 shadow-2xl shadow-rose-500/50'>
-    <iframe 
-        className="w-full h-full object-cover pointer-events-none"
-        src="https://www.youtube.com/embed/fvUy9AIVJQs?autoplay=1&loop=1&playlist=fvUy9AIVJQs&mute=1&controls=0&disablekb=1&modestbranding=1&rel=0"
-        title="YouTube video player"
-        frameBorder="0"
-        allow="autoplay; encrypted-media"
-        allowFullScreen
-    ></iframe>
-</div>
+                <div className='w-full aspect-video bg-rose-500 shadow-2xl shadow-rose-500/50'>
+                    <iframe
+                        className="w-full h-full object-cover pointer-events-none"
+                        src="https://www.youtube.com/embed/fvUy9AIVJQs?autoplay=1&loop=1&playlist=fvUy9AIVJQs&mute=1&controls=0&disablekb=1&modestbranding=1&rel=0"
+                        title="YouTube video player"
+                        frameBorder="0"
+                        allow="autoplay; encrypted-media"
+                        allowFullScreen
+                    ></iframe>
+                </div>
 
                 <div className='absolute top-0 left-0 w-full h-full flex justify-center items-center z-10'>
                     <h1 className='font-[Orbitron] text-2xl sm:text-4xl md:text-7xl lg:text-9xl font-bold text-center text-white relative z-0 scale-105 transition-all duration-600 hover:scale-100'>
@@ -84,12 +84,12 @@ function Home() {
             <div className="mt-20 lg:mt-30 grid grid-cols-1 gap-4  md:grid-cols-13 md:grid-rows-span-6  p-5 text-white ">
                 <div className="bg-background/80 backdrop-blur-md border md:border-l md:border-b border-white/10 md:col-span-4 md:row-span-4 md:row-start-2  p-4 transition-all duration-300 hover:bg-background/90 hover:scale-[1.02]">
                     <div>
-                        <img className='w-full h-80 object-cover flex justify-center items-center' src={data[0]?.background_image || './public/noimage.webp'} alt='game-photo' />
+                        <img className='w-full h-80 object-cover flex justify-center items-center' src={data[0]?.background_image || '/src/public/noimage.webp'} alt='game-photo' />
                     </div>
                     <div>
                         <div className='flex flex-cols justify-center items-center gap-3 pt-3'>
                             <h1 className='text-xl'>{data[0]?.name || ""}</h1>
-                            <img className='h-10 w-10' src={data[0]?.esrb_rating?.slug ? `./public/${data[0].esrb_rating.slug}.svg` : './public/rating-pending.svg'} />
+                            <img className='h-10 w-10' src={data[0]?.esrb_rating?.slug ? `/src/public/${data[0].esrb_rating.slug}.svg` : '/src/public/rating-pending.svg'} />
                         </div>
                     </div>
                     <div className='flex flex-cols gap-4 mt-2 pb-4 border-b border-white/30'>
@@ -125,7 +125,7 @@ function Home() {
                     <div>
                         <div className='flex flex-cols justify-center items-center gap-3 pt-3'>
                             <h1 className='text-xl'>{data[1].name}</h1>
-                            <img className='h-10 w-10' src={data[1]?.esrb_rating?.slug ? `./public/${data[1].esrb_rating.slug}.svg` : './public/rating-pending.svg'} />
+                            <img className='h-10 w-10' src={data[1]?.esrb_rating?.slug ? `/src/public/${data[1].esrb_rating.slug}.svg` : '/src/public/rating-pending.svg'} />
                         </div>
                     </div>
                     <div className='flex flex-cols gap-4 mt-2 pb-4 border-b border-white/30'>
@@ -163,7 +163,7 @@ function Home() {
                     <div>
                         <div className='flex flex-cols justify-center items-center gap-3 pt-3'>
                             <h1 className='text-xl'>{data[2].name}</h1>
-                            <img className='h-10 w-10' src={data[2]?.esrb_rating?.slug ? `./public/${data[2].esrb_rating.slug}.svg` : './public/rating-pending.svg'} />
+                            <img className='h-10 w-10' src={data[2]?.esrb_rating?.slug ? `/src/public/${data[2].esrb_rating.slug}.svg` : '/src/public/rating-pending.svg'} />
                         </div>
                     </div>
                     <div className='flex flex-cols gap-4 mt-2 pb-4 border-b border-white/30'>

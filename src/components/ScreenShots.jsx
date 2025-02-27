@@ -32,7 +32,7 @@ function ScreenShots({ screenshot }) {
                     <div key={index} className="carousel-item">
                         <div className="bg-background/80 backdrop-blur-md border md:border-l  border-white/10 md:col-span-4 md:row-span-4 md:row-start-2  p-4 transition-all duration-300 hover:bg-background/90 hover:scale-[1.02]">
                             <div>
-                                <img className='w-full h-80 object-cover flex justify-center items-center' src={game?.image || './public/noimage.webp'} alt='game-photo' />
+                                <img className='w-full h-80 object-cover flex justify-center items-center' src={game?.image || '/src/public/noimage.webp'} alt='game-photo' />
                             </div>
 
 

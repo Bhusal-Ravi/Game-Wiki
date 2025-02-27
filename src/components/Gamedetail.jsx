@@ -46,7 +46,7 @@ function Gamedetail() {
 
                 <div className="absolute bottom-0 left-0 w-full bg-black bg-opacity-25 p-4 flex justify-center items-center gap-2">
                     <h1 className="text-white text-2xl font-bold">{game.name}</h1>
-                    <img className='w-10 h-10' src={game?.esrb_rating?.slug ? `../public/${game.esrb_rating.slug}.svg` : '../public/rating-pending.svg'}></img>
+                    <img className='w-10 h-10' src={game?.esrb_rating?.slug ? `/src/public/${game.esrb_rating.slug}.svg` : '/src/public/rating-pending.svg'}></img>
                 </div>
             </div>
             {/*Ratings */}
@@ -66,7 +66,7 @@ function Gamedetail() {
 
                 {/* Metacritic Score Section */}
                 <div className="gap-2 flex flex-row justify-center items-center border border-white/10 p-4 w-32 h-28 transition duration-300 transform hover:scale-105 hover:shadow-lg hover:bg-opacity-80">
-                    <img src="../public/metacritic.png" className="w-8 h-8" />
+                    <img src="/src/public/metacritic.png" className="w-8 h-8" />
                     <div
                         className={`flex justify-center items-center ${game?.metacritic < 50 ? "bg-red-400 text-white" : "bg-green-400 text-black"}
       w-full h-10 p-2 transition duration-300 transform hover:scale-105 hover:shadow-lg hover:bg-opacity-80`}
@@ -109,7 +109,7 @@ function Gamedetail() {
                         >
                             <h1 className="text-sm text-center">{platform.platform.name}</h1>
                             <img
-                                src={`../public/${platform.platform.slug}.png`}
+                                src={`/src/public/${platform.platform.slug}.png`}
                                 className="w-12 h-12 object-contain"
                                 alt={platform.platform.name}
                             />

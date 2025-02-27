@@ -7,7 +7,7 @@ function Navbar() {
         <nav className=' z-50 bg-background/80 backdrop-blur-md border-b border-white/10 p-5  flex justify-between item-center fixed  left-0 w-full'>
 
             <div className='w-12 h-12 flex items-center'>
-                <img src='/src/public/logo.webp' />
+                <img src='./public/logo.webp' />
             </div>
             <ul className="flex items-center space-x-4">
                 <li><Search /></li>

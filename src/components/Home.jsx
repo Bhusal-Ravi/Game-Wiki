@@ -60,7 +60,7 @@ function Home() {
                 <div className='w-full aspect-video bg-rose-500 shadow-2xl shadow-rose-500/50'>
                     <iframe
                         className="w-full h-full object-cover pointer-events-none"
-                        src="https://www.youtube.com/embed/fvUy9AIVJQs?autoplay=1&loop=1&playlist=fvUy9AIVJQs&mute=0&controls=0&disablekb=1&modestbranding=1&rel=0"
+                        src="https://www.youtube.com/embed/fvUy9AIVJQs?autoplay=1&loop=1&playlist=fvUy9AIVJQs&mute=1&controls=0&disablekb=1&modestbranding=1&rel=0"
                         title="YouTube video player"
                         frameBorder="0"
                         allow="autoplay; encrypted-media"

@@ -45,13 +45,13 @@ function HRatedGames({ games, setHDevelopers }) {
                     <div key={index} className="carousel-item">
                         <div className="bg-background/80 backdrop-blur-md border md:border-l  border-white/10 md:col-span-4 md:row-span-4 md:row-start-2  p-4 transition-all duration-300 hover:bg-background/90 hover:scale-[1.02]">
                             <div>
-                                <img className='w-full h-80 object-cover flex justify-center items-center' src={game?.background_image || '/src/public/noimage.webp'} alt='game-photo' />
+                                <img className='w-full h-80 object-cover flex justify-center items-center' src={game?.background_image || '/noimage.webp'} alt='game-photo' />
                             </div>
                             <div>
                                 <div className='flex flex-cols justify-center items-center gap-3 pt-3 text-white'>
                                     <h1 className='text-xl w-full line-clamp-2 overflow-hidden'>{game?.name || ""}</h1>
 
-                                    <img className='h-10 w-10' src={game?.esrb_rating?.slug ? `/src/public/${game.esrb_rating.slug}.svg` : '/src/public/rating-pending.svg'} />
+                                    <img className='h-10 w-10' src={game?.esrb_rating?.slug ? `/${game.esrb_rating.slug}.svg` : '/rating-pending.svg'} />
                                 </div>
                             </div>
                             <div className='flex flex-cols gap-4 mt-2 pb-4 border-b border-white/30 text-white'>

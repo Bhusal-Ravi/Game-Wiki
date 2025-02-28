@@ -3,7 +3,7 @@
 export async function apiGame(){
     
     try{
-        const response=await fetch('http://localhost:5000/games');
+        const response=await fetch('https://game-wiki-xvar.onrender.com/games');
         const data= await response.json()
 
         if(!data.results && !Array.isArray(data.results)){
@@ -47,7 +47,7 @@ export async function apiGame(){
 export async function apiDevlopers(id){
 
     try{
-        const response= await fetch(`http://localhost:5000/developers/${id}`)
+        const response= await fetch(`https://game-wiki-xvar.onrender.com/developers/${id}`)
         const data= await response.json()
 
         if(!data && !Array.isArray(data)){
@@ -64,7 +64,7 @@ export async function apiDevlopers(id){
 export async function apiRatedGames(){
 
     try{
-        const response=await fetch(`http://localhost:5000/rated`)
+        const response=await fetch(`https://game-wiki-xvar.onrender.com/rated`)
         const data= await response.json()
         return data;
     }catch(error){
@@ -75,7 +75,7 @@ export async function apiRatedGames(){
 export async function apiQuotes(){
 
     try{
-        const response=await fetch(`http://localhost:5000/quotes`)
+        const response=await fetch(`https://game-wiki-xvar.onrender.com/quotes`)
         const data=response.json();
         return data;
 
@@ -86,7 +86,7 @@ export async function apiQuotes(){
 
 export async function apiSearch(query) {
     try {
-        const response = await fetch(`http://localhost:5000/search/${query}`)
+        const response = await fetch(`https://game-wiki-xvar.onrender.com/search/${query}`)
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`)
         }
@@ -103,7 +103,7 @@ export async function apiSearch(query) {
 export async function apiScreenshot(id){
     
     try{
-        const response= await fetch(`http://localhost:5000/screenshot/${id}`)
+        const response= await fetch(`https://game-wiki-xvar.onrender.com/screenshot/${id}`)
         const data= await response.json()
         return data
         

@@ -84,12 +84,12 @@ function Home() {
             <div className="mt-20 lg:mt-30 grid grid-cols-1 gap-4  md:grid-cols-13 md:grid-rows-span-6  p-5 text-white ">
                 <div className="bg-background/80 backdrop-blur-md border md:border-l md:border-b border-white/10 md:col-span-4 md:row-span-4 md:row-start-2  p-4 transition-all duration-300 hover:bg-background/90 hover:scale-[1.02]">
                     <div>
-                        <img className='w-full h-80 object-cover flex justify-center items-center' src={data[0]?.background_image || '/src/public/noimage.webp'} alt='game-photo' />
+                        <img className='w-full h-80 object-cover flex justify-center items-center' src={data[0]?.background_image || '/noimage.webp'} alt='game-photo' />
                     </div>
                     <div>
                         <div className='flex flex-cols justify-center items-center gap-3 pt-3'>
                             <h1 className='text-xl'>{data[0]?.name || ""}</h1>
-                            <img className='h-10 w-10' src={data[0]?.esrb_rating?.slug ? `/src/public/${data[0].esrb_rating.slug}.svg` : '/src/public/rating-pending.svg'} />
+                            <img className='h-10 w-10' src={data[0]?.esrb_rating?.slug ? `/${data[0].esrb_rating.slug}.svg` : '/rating-pending.svg'} />
                         </div>
                     </div>
                     <div className='flex flex-cols gap-4 mt-2 pb-4 border-b border-white/30'>
@@ -125,7 +125,7 @@ function Home() {
                     <div>
                         <div className='flex flex-cols justify-center items-center gap-3 pt-3'>
                             <h1 className='text-xl'>{data[1].name}</h1>
-                            <img className='h-10 w-10' src={data[1]?.esrb_rating?.slug ? `/src/public/${data[1].esrb_rating.slug}.svg` : '/src/public/rating-pending.svg'} />
+                            <img className='h-10 w-10' src={data[1]?.esrb_rating?.slug ? `/${data[1].esrb_rating.slug}.svg` : '/rating-pending.svg'} />
                         </div>
                     </div>
                     <div className='flex flex-cols gap-4 mt-2 pb-4 border-b border-white/30'>
@@ -163,7 +163,7 @@ function Home() {
                     <div>
                         <div className='flex flex-cols justify-center items-center gap-3 pt-3'>
                             <h1 className='text-xl'>{data[2].name}</h1>
-                            <img className='h-10 w-10' src={data[2]?.esrb_rating?.slug ? `/src/public/${data[2].esrb_rating.slug}.svg` : '/src/public/rating-pending.svg'} />
+                            <img className='h-10 w-10' src={data[2]?.esrb_rating?.slug ? `/${data[2].esrb_rating.slug}.svg` : '/rating-pending.svg'} />
                         </div>
                     </div>
                     <div className='flex flex-cols gap-4 mt-2 pb-4 border-b border-white/30'>

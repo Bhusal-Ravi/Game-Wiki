@@ -12,7 +12,7 @@ const AboutUsPage = () => {
             walkthroughs, and community-driven content.
           </p>
           <p className="text-lg mb-4">
-            Founded in 2023, we're dedicated to creating comprehensive resources 
+            Founded in 2025, we're dedicated to creating comprehensive resources 
             for gamers of all skill levels. Our wiki covers a wide range of games 
             including RPGs, FPS, Strategy, and more.
           </p>
